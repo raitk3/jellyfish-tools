@@ -2,6 +2,7 @@
 
 import logging
 
+from cogs.debug import Debug
 from discord import app_commands
 from discord.ext import commands
 from helpers import helpers

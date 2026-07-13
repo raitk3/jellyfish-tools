@@ -1,6 +1,9 @@
-.venv
-data/
+.agents/
 .idea/
+.venv
+.vscode
+__pycache__/
+data/
 logs/
 
 .env

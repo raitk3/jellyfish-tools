@@ -82,25 +82,12 @@ class Miscellaneous(commands.Cog, name='Miscellaneous'):
                 "║ Awwh, I didn't know you cared <3               ║",
                 "║ Or was it just an accident? :D                 ║",
                 "╟────────────────────────────────────────────────╢",
-                "║         ▄█                      Made by sBYTEr ║",
-                "║       ▄▀ █                         2021 - 2024 ║",
-                "║     ▄▀   █                                     ║",
-                "║   ▄▀▄    █    ▄▀▀▄                             ║",
-                "║ ▄▀   ▀▄  █  ▄▀    █                            ║",
-                "║  ▀▄    ▀▄█▄▀    ▄▀                             ║",
-                "║   ▄▀    ▄█▄    ▀▄                              ║",
-                "║ ▄▀    ▄▀ █ ▀▄    ▀▄                            ║",
-                "║  ▀▄ ▄▀   █   ▀▄  ▄▀                            ║",
-                "║    ▀     ▀     ▀▀                              ║",
-                "╟────────────────────────────────────────────────╢",
                 "║ Github repo:                                   ║",
-                "║ https://github.com/raitk3/CattoBottoPy         ║",
-                "║ Issues and feature requests can be added here: ║",
-                "║ https://github.com/raitk3/CattoBottoPy/issues  ║",
+                "║ https://github.com/raitk3/jellyfish-tools      ║",
                 "╚════════════════════════════════════════════════╝",
                 "```"]
         embed = Embed(title="CattoBotto",
-                url="https://github.com/raitk3/CattoBottoPy",
+                url="https://github.com/raitk3/jellyfish-tools",
                 description="\n".join(text))
         await ctx.send(embed=embed, ephemeral=True)
 

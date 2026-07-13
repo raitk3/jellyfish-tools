@@ -44,14 +44,14 @@ class Debug(commands.Cog, name='__Debug__'):
             await self.msg(ctx, i, True)
 
     @commands.command(hidden=True)
-    async def set_debug(self, ctx, value: bool = None):
+    async def set_debug(self, ctx, value: bool = False):
         """Set debug mode for debuggers."""
         user = ctx.author
         if helpers.is_user_debugger(user):
             if value is None and user not in self.debug_enabled or value:
                 self.debug_enabled.add(user)
                 await self.msg(ctx, f"Debugger set True for {user}.", True)
-            elif (value is None or not value) and user in self.debug_enabled:
+            elif (not value) and user in self.debug_enabled:
                 self.debug_enabled.remove(user)
                 await self.msg(ctx, f"Debugger set False for {user}.", True)
             else:
