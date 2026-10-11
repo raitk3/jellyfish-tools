@@ -5,6 +5,7 @@ import sys
 
 from discord import Game, Intents, version_info
 from discord.ext import commands
+from dotenv import load_dotenv
 from helpers.data import Data
 
 from modules.logger.logger import Logger
@@ -34,6 +35,7 @@ class MainBot():
     
     def find_token(self):
         """Locate the discord token for the bot to run."""
+        load_dotenv()
         token = os.getenv("DISCORD_TOKEN")
         if token is None:
             raise Exception("No token found, please add a token to .env as `DISCORD_TOKEN` and try again.")
